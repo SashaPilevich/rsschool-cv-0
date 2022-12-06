@@ -7,9 +7,12 @@
 ### Contact information:
 
 **Phone:** +375 29 762 08 22
+
 **Email:** pilevichsasha@gmail.com
+
 **Telegram:** ttps://t.me/sashabobrovich
-[Linkedin](www.linkedin.com/in/alexBobrovich)
+
+[Linkedin](https.linkedin.com/in/alexBobrovich)
 
 ---
 
