@@ -61,3 +61,37 @@ console.log(positiveNumber);
 console.log(negativeNumber);
 
 ```
+
+---
+
+### Experience
+
+During the training, several projects were implemented using various technologies.
+
+- Tasty
+  The project can be viewed at the link: https://sashapilevich.github.io/tasty
+
+- Pinterest (clone)
+  The project can be viewed at the link: https://sashapilevich.github.io/Clone-Pinterest-JS/src/
+
+- MOGO (responsive layout)
+  The project can be viewed at the link: https://sashapilevich.github.io/MOGO-Landing-page/src/
+
+- AXIT (responsive layout)
+  The project can be viewed at the link: https://sashapilevich.github.io/Landing-page-AXIT
+
+---
+
+### Education
+
+**TEACH ME SKILLS,22**
+Frontend Developer
+
+**VITEBSK STATE MEDICAL UNIVERSITY,16**
+Pharmacist
+
+---
+
+### Language
+
+**English A2 (in progress)**
