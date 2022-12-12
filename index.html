@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
   </head>
-  <body>
-    <img src="./assets/img/my-avatar.jpg" alt="avatar" width="300" height="330">
+  <body id="body">
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <!-- <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#english" class="nav-link">English</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="main-container">
+          <section class="section" id="profile">
+            <div class="profile-wrapper">
+              <div class="profile-info">
+                <h1 class="section-main-title">Frontend Developer</h1>
+                <h2 class="profile-title">
+                  Hi, My name is <span class="profile-name">Aleksandra</span>
+                </h2>
+                <p class="profile-about">
+                  The desire to constantly develop and grow led me to study
+                  front-end development.At the moment, I have successfully
+                  completed training in front-end development and I will be glad
+                  to get the opportunity to do an internship or get a job as a
+                  junior front-end developer. I am not afraid of difficulties, I
+                  love learning new things with great interest, I don’t put off
+                  until tomorrow what can be done today, I approach the tasks
+                  with great responsibility, I easily find contact with people,
+                  so I can work in a team without any problems. I am very
+                  motivated to improve my skills on real interesting projects,
+                  and at the moment, I continue to improve and expand my
+                  knowledge.I also improve my English language skills through
+                  tutoring.
+                </p>
+              </div>
+              <div class="profile-image">
+                <img
+                  class="profile-avatar"
+                  alt="avatar"
+                  src="/assets/img/avatar.jpg"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="section" id="skills">
+            <h2 class="section-title">Hard Skills</h2>
+            <div class="skills-container">
+              <div class="skills-item">
+                <p class="skills-text">HTML5</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">CSS3</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">SASS</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">JavaScript</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">TypeScript</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">ReactJs</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">Redux</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">RestApi</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">Webpack</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">Jest</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">Git</p>
+              </div>
+              <div class="skills-item">
+                <p class="skills-text">Figma</p>
+              </div>
+            </div>
+          </section>
+          <section class="section" id="code">
+            <h2 class="section-title">Code exapmle</h2>
+
+            <p class="code-text">
+              Given an array:<br />
+              const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4]
+              <br />Create two arrays, in one put all positive numbers including
+              0, in the other all negative ones. Both arrays are then output to
+              the console.
+            </p>
+            <div class="code-example">
+              <code>
+                let positiveNumber = [];<br />
+                let negativeNumber = [];<br />
+                const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4];<br />
+                for (let item of mixedNumbers) {<br />
+                if (item >= 0) {<br />
+                positiveNumber.push(item);<br />
+                } else if (item < 0) {<br />
+                negativeNumber.push(item);<br />
+                }<br />
+                }<br />
+                console.log(positiveNumber);<br />
+                console.log(negativeNumber);</code
+              >
+            </div>
+          </section>
+          <section class="section" id="courses"></section>
+          <section class="section" id="projects"></section>
+          <section class="section" id="education"></section>
+          <section class="section" id="english"></section>
+        </div>
+      </main>
+      <footer>
+        <section class="section" id="contacts"></section>
+      </footer>
+    </div>
   </body>
 </html>
