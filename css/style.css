@@ -31,7 +31,7 @@ a {
   margin: 0 auto;
   min-height: 100vh;
   width: 100%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .header {
   position: fixed;
@@ -43,6 +43,18 @@ a {
   z-index: 4;
   background-color: #181f24;
 }
+/* .header.onScroll{
+  background-image: linear-gradient(
+    to right,
+    rgba(24, 31, 36, 0.7) 0%,
+    rgba(255, 192, 0, 0.9) 75%,
+    rgba(255, 234, 0, 0.8) 100%
+  );
+  transition: all 0.8s ease;
+  background-size: 200% auto;
+  background-position: right center;
+  color: rgba(24, 31, 36, 0.7);
+} */
 .nav-list {
   padding: 20px;
   display: flex;
@@ -52,6 +64,7 @@ a {
 .nav-list ul li {
   height: 75px;
 }
+/*  */
 .nav-list li a {
   padding: 20px 30px;
   display: flex;
@@ -65,6 +78,7 @@ a {
   color: #ffffff;
   position: relative;
 }
+
 .nav-list li a:hover {
   color: goldenrod;
   transition: 0.6s;
@@ -93,19 +107,24 @@ a {
 }
 .main-container {
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 95px;
 }
+
 #profile {
   padding-top: 100px;
   margin-bottom: 50px;
+  background: #1e2124; 
 }
 .profile-wrapper {
   display: flex;
   justify-content: space-around;
+  height: 76vh;
 }
 .profile-info {
   width: 40%;
+  margin-left: 160px;
 }
+
 .section-main-title {
   font-size: 32px;
   text-transform: uppercase;
@@ -122,8 +141,10 @@ a {
   width: 120%;
   line-height: 30px;
 }
+
 .profile-image {
   position: relative;
+  margin-right: 100px;
 }
 .profile-image:after {
   display: block;
@@ -151,6 +172,19 @@ a {
 }
 #skills {
   margin-bottom: 50px;
+  position: relative;
+}
+#skills::before{
+  content: "";
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: linear-gradient(180deg, #1e2124 5%,#181f24 100%  );
+  transform: translate(0px,-100%);
 }
 .skills-container {
   display: grid;
@@ -160,6 +194,7 @@ a {
   row-gap: 50px;
   column-gap: 0px;
 }
+
 .skills-item {
   display: flex;
   justify-content: center;
@@ -176,6 +211,7 @@ a {
   -moz-box-shadow: 0px 0px 14px #fce701;
   -webkit-box-shadow: 0px 0px 14px #fce701;
   box-shadow: 0px 0px 14px #fce701;
+  transition: all 0.6s;
 }
 .skills-text {
   font-size: 24px;
@@ -191,12 +227,10 @@ a {
   margin-left: 160px;
 }
 .code-example {
-  /* color: #87877b; */
   color: white;
   width: 700px;
   padding: 20px;
   margin: 0 auto;
-  /* background: #2d3033; */
   border-radius: 10px;
   -moz-box-shadow: 0px 0px 14px #28353f;
   -webkit-box-shadow: 0px 0px 14px #28353f;
@@ -217,11 +251,11 @@ a {
 .cycle-style {
   color: #ff69b4;
 }
-.method-style{
-  color:#FFD580;
+.method-style {
+  color: #ffd580;
 }
-.number-style{
-  color:#C1E1C1;
+.number-style {
+  color: #c1e1c1;
 }
 #projects {
   margin-bottom: 50px;
@@ -248,15 +282,20 @@ a {
   opacity: 1;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  transform:scale(1.1) ;
+  transform: scale(1.1);
   transition: transform 0.6s ease;
 }
-.project-item:hover .project-link a{
-  background-image:linear-gradient(to right, rgba(24, 31, 36,0.7) 0%, rgba(255, 192, 0,0.9) 55%, rgba(255, 234, 0,0.8) 100%);
+.project-item:hover .project-link a {
+  background-image: linear-gradient(
+    to right,
+    rgba(24, 31, 36, 0.7) 0%,
+    rgba(255, 192, 0, 0.9) 55%,
+    rgba(255, 234, 0, 0.8) 100%
+  );
   transition: all 0.8s ease;
   background-size: 200% auto;
   background-position: right center;
-  color:rgba(24, 31, 36,0.7);
+  color: rgba(24, 31, 36, 0.7);
   font-weight: 700;
 }
 .project-image {
@@ -268,7 +307,6 @@ a {
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  opacity: 0.8;
 }
 
 .project-description {
@@ -312,4 +350,157 @@ a {
 }
 .project-link a:first-child {
   margin-right: 30px;
+}
+#education {
+  margin-bottom: 50px;
+}
+.education-container {
+  margin-left: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.education-item {
+  display: flex;
+  height: 60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.education-item:hover .line:after {
+  width: 30%;
+  transition: all 0.8s ease;
+}
+.education-item .line:after {
+  display: block;
+  clear: both;
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+.education-date {
+  width: 32%;
+}
+.education-specialize {
+  width: 35%;
+}
+#english {
+  margin-bottom: 80px;
+}
+.english-container {
+  margin-left: 160px;
+  display: flex;
+}
+.english-text {
+  margin-bottom: 30px;
+}
+.english-scale {
+  width: 50%;
+  height: 50px;
+  margin-left: 160px;
+}
+.english-loader {
+  width: 50%;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.english-loader.finish {
+  -webkit-animation: animFw 4s ease-in 1;
+  animation: animFw 4s ease-in 1;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(24, 31, 36, 0.7) 0%,
+    rgba(255, 192, 0, 0.9) 75%,
+    rgba(218, 202, 18, 0.8) 100%
+    /* rgba(24, 31, 36, 0.7) 100%, */
+  );
+  border-radius: 8px;
+}
+.percent {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+@keyframes animFw {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.contacts-container {
+  margin-left: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-text {
+  color: goldenrod;
+  font-weight: 600;
+}
+.contacts-link {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+.gitHub,
+.linkedin,
+.rsschool {
+  color: transparent;
+}
+.ico {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.ico.ico-github {
+  background-image: url("/assets/ico/github.svg");
+}
+.ico.ico-linkedin {
+  background-image: url("/assets/ico/linkedin.svg");
+}
+.ico.ico-rsschool {
+  background-image: url("/assets/ico/rs_school_js.svg");
+  width: 80px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+.ico.ico-github:hover,
+.ico.ico-linkedin:hover,
+.ico.ico-rsschool:hover ,
+.buttonToTop:hover{
+  -moz-box-shadow: 0px 0px 14px #fce701;
+  -webkit-box-shadow: 0px 0px 14px #fce701;
+  box-shadow: 0px 0px 14px #fce701;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.buttonToTop{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background-color: goldenrod;
+  color:white;
+  font-size: 18px;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 5;
 }
