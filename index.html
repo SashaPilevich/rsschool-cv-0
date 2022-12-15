@@ -4,10 +4,393 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
   </head>
   <body>
-    <img src="./img/my-avatar.jpg" alt="avatar" width="300" height="330">
+    <header class="main-header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#english" class="nav-link">English</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu-container">
+        <div class="burger-menu">
+          <span class="burger-line"></span>
+        </div>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="nav-list-mobile">
+          <li class="nav-item-mobile">
+            <a href="#skills" class="nav-link-mobile">Skills</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a href="#code" class="nav-link-mobile">Code</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a href="#projects" class="nav-link-mobile">Projects</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a href="#education" class="nav-link-mobile">Education</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a href="#english" class="nav-link-mobile">English</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a href="#contacts" class="nav-link-mobile">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <section id="profile">
+          <div class="container-profile">
+            <div class="profile-wrapper">
+              <div class="profile-info">
+                <h1 class="section-main-title">Frontend Developer</h1>
+                <h2 class="profile-title">
+                  Hi, My name is <span class="profile-name">Aleksandra</span>
+                </h2>
+                <p class="profile-about">
+                  The desire to constantly develop and grow led me to study
+                  front-end development.I am not afraid of difficulties, I love
+                  learning new things with great interest, I don’t put off until
+                  tomorrow what can be done today, I approach the tasks with
+                  great responsibility, I easily find contact with people, so I
+                  can work in a team without any problems. I am very motivated
+                  to improve my skills on real interesting projects, and at the
+                  moment, I continue to improve and expand my knowledge.I also
+                  improve my English language skills through tutoring.
+                </p>
+              </div>
+              <div class="profile-image">
+                <img
+                  class="profile-avatar"
+                  alt="avatar"
+                  src="/assets/img/my-avatar.jpg"
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <div class="container">
+            <h2 class="section-title">Hard Skills</h2>
+            <ul class="skills-container">
+              <li class="skills-item">HTML5</li>
+              <li class="skills-item">CSS3</li>
+              <li class="skills-item">SASS</li>
+              <li class="skills-item">JavaScript</li>
+              <li class="skills-item">TypeScript</li>
+              <li class="skills-item">ReactJs</li>
+              <li class="skills-item">Redux</li>
+              <li class="skills-item">RestApi</li>
+              <li class="skills-item">Webpack</li>
+              <li class="skills-item">Jest</li>
+              <li class="skills-item">Git</li>
+              <li class="skills-item">Figma</li>
+            </ul>
+          </div>
+        </section>
+        <section id="code">
+          <div class="container">
+            <h2 class="section-title">Code exapmle</h2>
+            <p class="code-text">
+              Given an array:<br>
+              const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4]
+              <br>Create two arrays, in one put all positive numbers including
+              0, in the other all negative ones. Both arrays are then output to
+              the console.
+            </p>
+            <div class="code-example">
+              <code>
+                <span class="variable-style">let</span
+                ><span class="variable-name">positiveNumber</span> =<span
+                  class="brackets-style"
+                >
+                  []</span
+                >;<br>
+                <span class="variable-style">let </span
+                ><span class="variable-name">negativeNumber</span> =<span
+                  class="brackets-style"
+                >
+                  []</span
+                >;<br>
+                <span class="variable-style">const </span>
+                <span class="const-name">mixedNumbers</span> =
+                <span class="brackets-style"> [</span
+                ><span class="number-style"
+                  >-14, 24, -89, 43, 0 , -1, 412, 4</span
+                ><span class="brackets-style"> ]</span>;<br>
+                <span class="cycle-style">for</span>
+                <span class="brackets-style"> (</span
+                ><span class="variable-style">let </span>
+                <span class="variable-name">item</span>
+                <span class="variable-style">of </span>
+                <span class="const-name">mixedNumbers</span
+                ><span class="brackets-style"> )</span>
+                <span class="brackets-style"> {</span><br>
+                <span class="cycle-style">if (</span
+                ><span class="variable-name">item</span> >=
+                <span class="number-style">0</span
+                ><span class="cycle-style">) {</span><br>
+                <span class="variable-name">positiveNumber</span>.<span
+                  class="method-style"
+                  >push</span
+                ><span class="const-name">(</span
+                ><span class="variable-name">item</span
+                ><span class="const-name">)</span>
+                <span class="cycle-style">} else if (</span
+                ><span class="variable-name">item</span> &lt;
+                <span class="number-style">0</span
+                ><span class="cycle-style">) {</span><br>
+                <span class="variable-name">negativeNumber</span>.<span
+                  class="method-style"
+                  >push</span
+                ><span class="const-name">(</span
+                ><span class="variable-name">item</span
+                ><span class="const-name">)</span>;
+                <span class="cycle-style">}</span><br>
+                <span class="brackets-style">}</span><br>
+                <span class="variable-name">console</span>.<span
+                  class="method-style"
+                  >log</span
+                ><span class="brackets-style">(</span
+                ><span class="variable-name">positiveNumber</span
+                ><span class="brackets-style">)</span>;<br>
+                <span class="variable-name">console</span>.<span
+                  class="method-style"
+                  >log</span
+                ><span class="brackets-style">(</span
+                ><span class="variable-name">negativeNumber</span
+                ><span class="brackets-style">)</span>;</code
+              >
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="container">
+            <h2 class="section-title">My Projects</h2>
+              <div class="projects-container">
+                <div class="project-item">
+                  <div class="project-image tasty">
+                    <img src="/assets/img/tasty.jpg" alt="project-tasty">
+                  </div>
+                  <div class="project-description">
+                    <h3 class="project-title">Tasty</h3>
+                    <span class="project-stack"
+                      >HTML/CSS/JavaScript/TypeScript/
+                      React/Redux/Redux-thunk</span
+                    >
+                    <p class="project-text">
+                      This is an application that allows you to find not only a
+                      wide variety of culinary recipes, but also arrange instant
+                      delivery of products from the list of ingredients.
+                    </p>
+                    <div class="project-link">
+                      <a
+                        href="https://sashapilevich.github.io/tasty"
+                        target="_blank"
+                        rel="noopener"
+                        >See project</a
+                      >
+                      <a
+                        href="https://github.com/SashaPilevich/tasty"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-image pinterest">
+                    <img
+                      src="/assets/img/pinterest.jpg"
+                      alt="project-pinterest"
+                    >
+                  </div>
+                  <div class="project-description">
+                    <h3 class="project-title">Pinterest(clone)</h3>
+                    <span class="project-stack">HTML/CSS/JavaScript</span>
+                    <p class="project-text">
+                      This application allows you to find beautiful photos on
+                      various topics, as well as create your own collections
+                      with selected photos.
+                    </p>
+                    <div class="project-link">
+                      <a
+                        href="https://sashapilevich.github.io/Clone-Pinterest-JS/src/"
+                        target="_blank"
+                        rel="noopener"
+                        >See project</a
+                      >
+                      <a
+                        href="https://github.com/SashaPilevich/Clone-Pinterest-JS"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-image axit">
+                    <img src="/assets/img/axit.jpg" alt="project-axit">
+                  </div>
+                  <div class="project-description">
+                    <h3 class="project-title">AXIT</h3>
+                    <span class="project-stack">HTML/CSS/SASS</span>
+                    <p class="project-text">
+                      This is a simple landing page with adaptive layout for
+                      different devices.
+                    </p>
+                    <div class="project-link">
+                      <a
+                        href="https://sashapilevich.github.io/MOGO-Landing-page/src/"
+                        target="_blank"
+                        rel="noopener"
+                        >See project</a
+                      >
+                      <a
+                        href="https://github.com/SashaPilevich/Landing-page-AXIT"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-image mogo">
+                    <img src="/assets/img/mogo.jpg" alt="project-mogo">
+                  </div>
+                  <div class="project-description">
+                    <h3 class="project-title">MOGO</h3>
+                    <span class="project-stack">HTML/CSS/JavaScript</span>
+                    <p class="project-text">
+                      This is a simple landing page with adaptive layout for
+                      different devices.
+                    </p>
+                    <div class="project-link">
+                      <a
+                        href="https://sashapilevich.github.io/Landing-page-AXIT"
+                        target="_blank"
+                        rel="noopener"
+                        >See project</a
+                      >
+                      <a
+                        href="https://github.com/SashaPilevich/MOGO-Landing-page"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section id="education">
+          <div class="container">
+            <h2 class="section-title">Education and courses</h2>
+            <div class="education-container">
+              <div class="education-item">
+                <div class="line"></div>
+                <p class="education-date">December 2022 - now</p>
+                <p class="education-specialize">JS/FE Pre-School 2022Q4</p>
+                <p class="education-place">Rolling Scopes School</p>
+              </div>
+              <div class="education-item">
+                <div class="line"></div>
+                <p class="education-date">February 2022 - November 2022</p>
+                <p class="education-specialize">Frontend developer</p>
+                <p class="education-place">Teach Me Skills</p>
+              </div>
+              <div class="education-item">
+                <div class="line"></div>
+                <p class="education-date">September 2011 - June 2016</p>
+                <p class="education-specialize">Pharmacist</p>
+                <p class="education-place">Vitebsk state medical university</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="english">
+          <div class="container">
+            <h2 class="section-title">English</h2>
+            <div class="english-container">
+              <p class="english-text">A2 in progress</p>
+            </div>
+            <div class="english-scale">
+              <span class="english-loader"></span>
+              <span class="percent"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <button
+      id="scrollToTop"
+      class="buttonToTop"
+      title="Go to top"
+      type="button"
+    >
+      Top
+    </button>
+    <footer id="contacts">
+      <div class="container">
+        <div class="contacts-container">
+          <p class="contacts-text">&copy; by Aleksandra Bobrovich</p>
+          <ul class="contacts-link">
+            <li>
+              <a
+                class="gitHub"
+                href="https://github.com/SashaPilevich"
+                target="_blank"
+                rel="noopener"
+                ><i class="ico ico-github"></i>Git</a
+              >
+            </li>
+            <li>
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/alexBobrovich/"
+                target="_blank"
+                rel="noopener"
+                ><i class="ico ico-linkedin"></i>Link</a
+              >
+            </li>
+            <li>
+              <a
+                class="rsschool"
+                href="https://rs.school/js/"
+                target="_blank"
+                rel="noopener"
+                ><i class="ico ico-rsschool"></i>Rss</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
