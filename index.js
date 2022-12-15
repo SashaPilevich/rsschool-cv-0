@@ -6,7 +6,7 @@ let current = 0;
 
 let heightBlock = englishBlock.offsetHeight;
 let offsetBlock = offset(englishBlock).top;
-const animStart = 4;
+const animStart = 1;
 let animItemPoint = window.innerHeight - heightBlock / animStart;
 
 window.addEventListener('scroll', () => {
