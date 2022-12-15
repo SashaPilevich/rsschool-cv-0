@@ -205,8 +205,11 @@ body {
 }
 .nav-list-mobile .nav-item-mobile .nav-link-mobile {
   display: block;
-  margin-bottom: 40px;
-  font-weight: 500;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
   color: goldenrod;
 }
 .nav-list-mobile .nav-item-mobile .nav-link-mobile:hover {
@@ -238,6 +241,8 @@ body {
   display: flex;
   justify-content: space-around;
   height: 76vh;
+  width: 1200px;
+  margin: 0 auto;
 }
 .profile-info {
   width: 40%;
@@ -608,7 +613,8 @@ body {
     width: 1024px;
     padding: 0px 30px;
   }
-  .container-profile {
+  .container-profile,
+  .profile-wrapper {
     width: 1024px;
   }
   .profile-about {
