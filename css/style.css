@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-family:"Raleway";
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf");
 }
 html {
   scroll-behavior: smooth;
