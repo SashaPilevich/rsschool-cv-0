@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+  src: url("assets/fonts/Raleway-VariableFont_wght.ttf");
 }
 html {
   scroll-behavior: smooth;
@@ -573,13 +573,13 @@ body {
 }
 
 .ico.ico-github {
-  background-image: url("/assets/ico/github.svg");
+  background-image: url("assets/ico/github.svg");
 }
 .ico.ico-linkedin {
-  background-image: url("/assets/ico/linkedin.svg");
+  background-image: url("assets/ico/linkedin.svg");
 }
 .ico.ico-rsschool {
-  background-image: url("/assets/ico/rs_school_js.svg");
+  background-image: url("assets/ico/rs_school_js.svg");
   width: 80px;
   border-radius: 10px;
   margin-right: 100px;
