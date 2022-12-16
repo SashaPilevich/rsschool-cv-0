@@ -229,7 +229,6 @@ body {
 }
 .container-profile {
   position: relative;
-  z-index: -2;
   width: 100%;
   padding-top: 100px;
   margin: 0px auto 50px;
@@ -245,6 +244,32 @@ body {
 }
 .profile-info {
   width: 40%;
+}
+.download-cv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  margin-left: 40px;
+  border-radius: 10px;
+  border: 2px solid goldenrod;
+}
+.download-cv a{
+  font-weight: 600;
+  color: white;
+}
+.download-cv:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(24, 31, 36, 0.7) 0%,
+    rgba(255, 192, 0, 0.9) 55%,
+    rgba(255, 234, 0, 0.8) 100%
+  );
+  background-size: 200% auto;
+  background-position: right center;
+  transition: all 0.8s ease;
+  border: none;
 }
 
 .section-main-title {
@@ -272,17 +297,21 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: -1;
+  z-index: 1;
   width: 230px;
   height: 240px;
   background-color: goldenrod;
   border-radius: 50%;
 }
 .profile-avatar {
+  position: relative;
+  z-index: 2;
   width: 230px;
   height: 240px;
+  margin-bottom: 100px;
   border-radius: 50%;
 }
+
 .section-title {
   margin-bottom: 40px;
   color: goldenrod;
