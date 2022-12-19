@@ -1,0 +1,86 @@
+@media (max-width: 1200px){
+  .container {
+    width: 1024px;
+    padding: 0px 30px;
+  }
+  .container-profile,
+  .profile-wrapper {
+    width: 1024px;
+  }
+  .profile-wrapper {
+    height: 90vh;
+  }
+  .profile-about {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  #skills::before {
+    height: 50px;
+    width: 1024px;
+  }
+}
+@media(max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .project-item {
+    width: 70%;
+    padding: 0px;
+    justify-content: center;
+  }
+  .project-image {
+    display: none;
+  }
+  .project-image img {
+    display: none;
+  }
+  .project-description {
+    align-items: center;
+  }
+  .project-text {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) {
+  #profile{
+    margin-bottom: 100px;
+  }
+  .container-profile{
+    padding-top: 60px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1200px) and (orientation: landscape) {
+#profile{
+  margin-bottom: 100px;
+}
+  .container-profile{
+    padding-top: 60px;
+    margin-bottom: 0px;
+  }
+  .profile-wrapper{
+    height: 120vh;
+  }
+  .profile-about {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .profile-avatar{
+    margin-bottom: 50px;
+  }
+  #skills::before {
+    z-index: -1;
+    height: 100px;
+  }
+  }
+  @media only screen and (min-width: 310px) and (max-width: 500px) and (orientation: landscape) {
+    .profile-wrapper{
+      height: 120vh;
+    }
+    #skills{
+      padding-top: 150px;
+    }
+  }
